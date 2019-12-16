@@ -41,36 +41,7 @@ export default {
   },
   data () {
     return {
-      fillNavbar: false,
       toggleMenu: false
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.onScroll)
-  },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.onScroll)
-  },
-  methods: {
-    onScroll () {
-      // Get the current scroll position
-      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-      // Here we determine whether we need to fill or hide the navbar
-      this.fillNavbar = currentScrollPosition > 10
-    },
-
-    onToggle () {
-      if (window.innerWidth <= 768) {
-        this.toggleMenu = !this.toggleMenu
-
-        if (this.toggleMenu) {
-          document.documentElement.style.overflow = 'hidden'
-          document.body.scroll = 'no'
-        } else {
-          document.documentElement.style.overflow = 'scroll'
-          document.body.scroll = 'yes'
-        }
-      }
     }
   }
 }
