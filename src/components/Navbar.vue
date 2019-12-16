@@ -53,6 +53,7 @@ export default {
     width: 100%;
     justify-content: space-between;
     padding: 22px 70px 0 70px;
+    margin-bottom: 105px;
   }
 
   .nav-link-list {
@@ -65,7 +66,6 @@ export default {
 
   .mobile-toggle {
     display: none;
-    color: #fff;
     cursor: pointer;
   }
 
