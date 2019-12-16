@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header :scrollDuration="this.scrollDuration" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vue from 'vue'
+import vueSmoothScroll from 'vue-smooth-scroll'
+
+import Header from './components/Header.vue'
+
+Vue.use(vueSmoothScroll)
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header
+  },
+  data () {
+    return {
+      scrollDuration: 2000
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
 </style>
