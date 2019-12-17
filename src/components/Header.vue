@@ -9,6 +9,7 @@
         <h5 class="event-address">Corrientes 348 Argentinian stakehouse</h5>
         <p class="event-address-2">1807 Ross Ave., Dallas, TX</p>
       </div>
+      <div class="separator"></div>
       <p class="description">Discover our finest tranditional Argenitinian barbacue with an elegant selection of wines, meat, pork and chicken.</p>
     </div>
     <button class="action-button">Join the event</button>
@@ -34,7 +35,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: grey no-repeat center center;
+    background: url(../assets/img/header-background.png) no-repeat center center;
     background-size: cover;
     color: #F0E6DF;
   }
@@ -61,13 +62,20 @@ export default {
     align-items: center;
     margin-top: 65px;
     margin-bottom: 65px;
+    width: 100%;
   }
 
   .details {
     text-transform: uppercase;
     text-align: right;
     padding-right: 30px;
-    border-right: 2px solid #FFCA7F;
+    width: 51.7%;
+  }
+
+  .separator {
+    width: 2px;
+    height: 106px;
+    background-color: #FFCA7F;
   }
 
   .event-date {
@@ -89,9 +97,10 @@ export default {
   }
 
   .description {
-    width: 450px;
     margin: 0;
     padding-left: 30px;
+    padding-right: 260px;
+    width: 50%;
     font-size: 17px;
     line-height: 23px;
   }

@@ -53,7 +53,7 @@ export default {
     width: 100%;
     justify-content: space-between;
     padding: 22px 70px 0 70px;
-    margin-bottom: 105px;
+    margin-bottom: 90px;
   }
 
   .nav-link-list {
