@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header :scrollDuration="this.scrollDuration" />
+    <UpcomingEvents />
   </div>
 </template>
 
@@ -9,13 +10,15 @@ import Vue from 'vue'
 import vueSmoothScroll from 'vue-smooth-scroll'
 
 import Header from './components/Header.vue'
+import UpcomingEvents from './components/UpcomingEvents.vue'
 
 Vue.use(vueSmoothScroll)
 
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    UpcomingEvents
   },
   data () {
     return {
