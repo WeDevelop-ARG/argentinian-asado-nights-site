@@ -48,8 +48,7 @@ export default {
   .upcoming-events {
     display: flex;
     justify-content: space-between;
-    background: #393939 no-repeat center center;
-    background-size: cover;
+    background-color: #393939;
     color: #F0E6DF;
     padding-top: 110px;
     padding-bottom: 90px;
@@ -60,6 +59,7 @@ export default {
     position: absolute;
     left: 25.68%;
     border: 1px solid rgba(211, 213, 216, 0.24);
+    z-index: 2;
   }
 
   .first-line {

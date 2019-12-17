@@ -2,6 +2,7 @@
   <div id="app">
     <Header :scrollDuration="this.scrollDuration" />
     <UpcomingEvents />
+    <Culture />
   </div>
 </template>
 
@@ -9,8 +10,9 @@
 import Vue from 'vue'
 import vueSmoothScroll from 'vue-smooth-scroll'
 
-import Header from './components/Header.vue'
-import UpcomingEvents from './components/UpcomingEvents.vue'
+import Header from './components/Header'
+import UpcomingEvents from './components/UpcomingEvents'
+import Culture from './components/Culture'
 
 Vue.use(vueSmoothScroll)
 
@@ -18,7 +20,8 @@ export default {
   name: 'app',
   components: {
     Header,
-    UpcomingEvents
+    UpcomingEvents,
+    Culture
   },
   data () {
     return {
@@ -35,6 +38,7 @@ export default {
 
   body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #393939;
   }
 
 </style>
