@@ -4,6 +4,7 @@
     <UpcomingEvents />
     <Culture />
     <ContactForm />
+    <ContactInfo />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Header from './components/Header'
 import UpcomingEvents from './components/UpcomingEvents'
 import Culture from './components/Culture'
 import ContactForm from './components/ContactForm'
+import ContactInfo from './components/ContactInfo'
 
 Vue.use(vueSmoothScroll)
 
@@ -24,7 +26,8 @@ export default {
     Header,
     UpcomingEvents,
     Culture,
-    ContactForm
+    ContactForm,
+    ContactInfo
   },
   data () {
     return {
