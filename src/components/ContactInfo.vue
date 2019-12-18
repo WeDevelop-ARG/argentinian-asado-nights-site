@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'Culture'
+  name: 'ContactInfo'
 }
 </script>
 
