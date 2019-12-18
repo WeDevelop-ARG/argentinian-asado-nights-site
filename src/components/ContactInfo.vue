@@ -26,7 +26,9 @@ export default {
     align-items: center;
     color: #F0E6DF;
     padding-top: 48px;
-    position: relative;
+    padding-bottom: 120px;
+    background: url(../assets/img/contact-background.png) no-repeat center center;
+    background-size: cover;
   }
 
   .title-section {
@@ -71,17 +73,5 @@ export default {
     font-weight: 300;
     font-size: 24px;
     line-height: 18px;
-  }
-
-  @media (max-width: 1366px) {
-    .line {
-      left: 24.9%;
-    }
-  }
-
-  @media (max-width: 1280px) {
-    .line {
-      left: 23.2%;
-    }
   }
 </style>

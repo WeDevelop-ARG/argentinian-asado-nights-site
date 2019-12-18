@@ -176,13 +176,13 @@ export default {
 
   @media (max-width: 1366px) {
     .line {
-      left: 24.9%;
+      left: 25.6%;
     }
   }
 
   @media (max-width: 1280px) {
     .line {
-      left: 23.2%;
+      left: 23.8%;
     }
   }
 </style>
