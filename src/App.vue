@@ -4,7 +4,10 @@
     <UpcomingEvents />
     <Culture />
     <ContactForm />
-    <ContactInfo />
+    <div class="darker-background">
+      <ContactInfo />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -17,6 +20,7 @@ import UpcomingEvents from './components/UpcomingEvents'
 import Culture from './components/Culture'
 import ContactForm from './components/ContactForm'
 import ContactInfo from './components/ContactInfo'
+import Footer from './components/Footer'
 
 Vue.use(vueSmoothScroll)
 
@@ -27,7 +31,8 @@ export default {
     UpcomingEvents,
     Culture,
     ContactForm,
-    ContactInfo
+    ContactInfo,
+    Footer
   },
   data () {
     return {
@@ -47,4 +52,7 @@ export default {
     background-color: #393939;
   }
 
+  .darker-background {
+    background-color: #212121;
+  }
 </style>
