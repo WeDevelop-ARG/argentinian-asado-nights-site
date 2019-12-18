@@ -3,6 +3,7 @@
     <Header :scrollDuration="this.scrollDuration" />
     <UpcomingEvents />
     <Culture />
+    <ContactForm />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import vueSmoothScroll from 'vue-smooth-scroll'
 import Header from './components/Header'
 import UpcomingEvents from './components/UpcomingEvents'
 import Culture from './components/Culture'
+import ContactForm from './components/ContactForm'
 
 Vue.use(vueSmoothScroll)
 
@@ -21,7 +23,8 @@ export default {
   components: {
     Header,
     UpcomingEvents,
-    Culture
+    Culture,
+    ContactForm
   },
   data () {
     return {

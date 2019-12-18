@@ -52,7 +52,6 @@ export default {
     background-color: #303030;
     color: #F0E6DF;
     padding-top: 60px;
-    padding-bottom: 90px;
     position: relative;
   }
 
