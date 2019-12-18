@@ -4,7 +4,10 @@
     <UpcomingEvents />
     <Culture />
     <ContactForm />
+<<<<<<< HEAD
     <ContactInfo />
+=======
+>>>>>>> Added contact form section
   </div>
 </template>
 
@@ -16,7 +19,10 @@ import Header from './components/Header'
 import UpcomingEvents from './components/UpcomingEvents'
 import Culture from './components/Culture'
 import ContactForm from './components/ContactForm'
+<<<<<<< HEAD
 import ContactInfo from './components/ContactInfo'
+=======
+>>>>>>> Added contact form section
 
 Vue.use(vueSmoothScroll)
 
@@ -26,8 +32,12 @@ export default {
     Header,
     UpcomingEvents,
     Culture,
+<<<<<<< HEAD
     ContactForm,
     ContactInfo
+=======
+    ContactForm
+>>>>>>> Added contact form section
   },
   data () {
     return {
