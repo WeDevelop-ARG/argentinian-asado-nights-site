@@ -47,8 +47,8 @@ export default {
   computed: {
     checkDisabled: function () {
       const { email, name, surname, phone, company } = this.contact
-      console.log(this.contact)
-      return name === '' || surname === '' || email === '' || phone === '' || company === ''
+
+      return [name, surname, email, phone, company].includes('')
     }
   }
 }
