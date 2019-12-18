@@ -4,8 +4,10 @@
     <UpcomingEvents />
     <Culture />
     <ContactForm />
-    <ContactInfo />
-    <Footer />
+    <div class="darker-background">
+      <ContactInfo />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -50,4 +52,7 @@ export default {
     background-color: #393939;
   }
 
+  .darker-background {
+    background-color: #212121;
+  }
 </style>

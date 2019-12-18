@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
     <span class="line"></span>
-    <img src="../assets/img/line-background4.svg" class="line-background" alt="">
     <p class="footer-text">Argentinian Asado Nights Roadshow 2020 is powered by</p>
     <a href="https://wedevelop.me/">
       <img src="../assets/img/wedevelop-logo.svg" class="logo" alt="WeDevelop">
@@ -22,10 +21,9 @@ export default {
     justify-content: center;
     color: #F0E6DF;
     background-color: #212121;
-    padding-top: 48px;
+    padding-top: 20px;
     padding-bottom: 45px;
     position: relative;
-    overflow: hidden;
   }
 
   .logo {
@@ -42,16 +40,9 @@ export default {
   .line {
     height: 87px;
     position: absolute;
-    top: 0;
+    top: -28px;
     left: 25.68%;
     border: 1px solid rgba(211, 213, 216, 0.24);
-  }
-
-  .line-background {
-    position: absolute;
-    z-index: 0;
-    top: -285px;
-    left: 500px;
   }
 
   @media (max-width: 1366px) {

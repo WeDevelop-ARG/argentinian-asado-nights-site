@@ -26,9 +26,10 @@ export default {
     align-items: center;
     color: #F0E6DF;
     padding-top: 48px;
-    padding-bottom: 120px;
+    padding-bottom: 134px;
     background: url(../assets/img/contact-background.png) no-repeat center center;
     background-size: cover;
+    background-color: #212121;
   }
 
   .title-section {
