@@ -75,4 +75,43 @@ export default {
     font-size: 24px;
     line-height: 18px;
   }
+
+  @media (max-width: 1024px) {
+    .title {
+      margin-bottom: 70px;
+      font-size: 36px;
+      line-height: 52px;
+    }
+
+    .title-underline {
+      width: 110px;
+      height: 4px;
+      top: 40px;
+      left: 20px;
+    }
+
+    .contact-info-section {
+      padding-bottom: 159px;
+    }
+
+    .content-text {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .contact-info {
+      margin-bottom: 28px;
+      font-size: 18px;
+    }
+
+    .content-text {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-info-section {
+      padding-bottom: 173px;
+    }
+  }
 </style>

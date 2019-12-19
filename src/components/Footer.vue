@@ -56,4 +56,29 @@ export default {
       left: 23.2%;
     }
   }
+
+  @media (max-width: 1024px) {
+    .line {
+      left: 21%;
+    }
+
+    .footer {
+      padding-bottom: 40px;
+    }
+
+    .footer-text {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .logo {
+      width: 120px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .line {
+      left: 10%;
+    }
+  }
 </style>

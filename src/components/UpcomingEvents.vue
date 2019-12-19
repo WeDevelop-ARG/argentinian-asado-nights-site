@@ -138,4 +138,73 @@ export default {
       padding-left: 91px;
     }
   }
+
+  @media (max-width: 1024px) {
+    .upcoming-events {
+      padding-top: 50px;
+      padding-bottom: 80px;
+    }
+
+    .image {
+      width: 140px;
+    }
+
+    .line {
+      left: 21%;
+    }
+
+    .first-line {
+      height: 45px;
+    }
+
+    .second-line {
+      top: 102px;
+      height: 440px;
+    }
+
+    .title {
+      padding-left: 50px;
+      font-size: 36px;
+      line-height: 52px;
+    }
+
+    .title-underline {
+      width: 237px;
+      height: 4px;
+      top: 38px;
+      left: 65px;
+    }
+
+    .content {
+      padding-left: 51px;
+    }
+
+    .events {
+      margin-top: 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .line {
+      left: 10%;
+    }
+
+    .title {
+      padding-left: 0;
+    }
+
+    .title-underline {
+      left: 20px;
+    }
+
+    .events {
+      margin-top: 100px;
+      padding-left: 17px;
+    }
+
+    .second-line {
+      height: 490px;
+      top: 140px;
+    }
+  }
 </style>

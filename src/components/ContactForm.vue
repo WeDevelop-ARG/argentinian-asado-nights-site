@@ -24,7 +24,7 @@
           </button>
         </form>
       </div>
-      <img src="../assets/img/wine.svg" alt="">
+      <img src="../assets/img/wine.svg" class="image" alt="">
     </div>
     <div class="line first-line"></div>
   </div>
@@ -183,6 +183,81 @@ export default {
   @media (max-width: 1280px) {
     .line {
       left: 23.2%;
+    }
+  }
+
+    @media (max-width: 1024px) {
+    .contact-form {
+      padding: 80px 0 200px 100px;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 52px;
+    }
+
+    .title-underline {
+      top: 38px;
+      left: 20px;
+      height: 4px;
+      width: 200px;
+    }
+
+    .image {
+      width: 250px;
+    }
+
+    .subtitle {
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .description {
+      margin: 0 0 50px 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .line {
+      left: 21%;
+    }
+
+    .first-line {
+      top: 560px;
+      height: 175px;
+    }
+
+    .form {
+      padding-right: 200px;
+    }
+
+    .input {
+      margin-bottom: 35px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .submit-button {
+      margin-top: 15px;
+      padding: 20px 30px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .line {
+      left: 10%;
+    }
+
+    .contact-form {
+      padding-left: 45px;
+    }
+
+    .form {
+      padding-right: 150px;
     }
   }
 </style>

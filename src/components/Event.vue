@@ -3,6 +3,7 @@
     <h4 class="event-date">{{ event.date }}</h4>
     <span class="circle"></span>
     <div>
+      <p class="event-date event-date-sm">{{ event.date }}</p>
       <h5 class="event-address">{{ event.address }}</h5>
       <p class="event-address-2">{{ event.address2 }}</p>
     </div>
@@ -34,6 +35,12 @@ export default {
     line-height: 22px;
   }
 
+  .event-date-sm {
+    display: none;
+    color: rgba(240, 230, 223, 0.6);
+    margin-bottom: 5px;
+  }
+
   .circle {
     width: 16px;
     height: 16px;
@@ -54,5 +61,49 @@ export default {
     font-weight: 300;
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (max-width: 1024px) {
+    .event-date {
+      width: 125px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .event-address {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .event-address-2 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .circle {
+      margin: 0 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .event-date {
+      display: none;
+    }
+
+    .event-date-sm {
+      display: initial;
+    }
+
+    .events {
+      padding-left: 17px;
+    }
+
+    .circle {
+      margin: 0 25px 0 0;
+    }
+
+    .event-address-2 {
+      margin: 5px 0 0 0;
+    }
   }
 </style>

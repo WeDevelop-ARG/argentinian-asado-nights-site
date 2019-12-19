@@ -14,7 +14,7 @@
         />
     </span>
     <a href="#app" class="nav-brand" v-smooth-scroll="{ duration: scrollDuration }">
-      <img src="../assets/img/logo.svg" alt="Argentinian Asado Night logo">
+      <img src="../assets/img/logo.svg" class="nav-logo" alt="Argentinian Asado Night logo">
     </a>
     <ul class="nav-link-list" :class="{'active-menu': toggleMenu}" >
       <li v-on:click="onToggle" class="nav-item">
@@ -85,5 +85,16 @@ export default {
     letter-spacing: 0.08em;
     color: #F0E6DF;
     text-decoration: none;
+  }
+
+  @media (max-width: 1024px) {
+    .nav-logo {
+      width: 90px;
+    }
+
+    .nav-link {
+      font-size: 13px;
+      line-height: 18px;
+    }
   }
 </style>

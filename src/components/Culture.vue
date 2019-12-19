@@ -15,12 +15,13 @@
     </div>
     <div class="line first-line"></div>
     <div class="culture-section">
+      <img class="culture-image culture-image-show-mobile" src="../assets/img/mate.png" alt="Mate">
       <div class="culture-content culture-content-left">
         <h4 class="subtitle">Mate</h4>
         <p class="description">Mate has a strong cultural significance both in terms of national identity and well as socially; it is the national drink of Argentina. Drinking mate is a common social practice in parts of Brazil, Chile, Argentina, Paraguay, Peru, Uruguay and eastern Bolivia.</p>
         <p class="description">It is prepared by steeping dried leaves of yerba mate in hot water and is served with a metal straw from a shared hollow calabash gourd. The straw is called a “bombilla” in Spanish, and is traditionally made of silver.</p>
       </div>
-      <img class="culture-image" src="../assets/img/mate.png" alt="Mate">
+      <img class="culture-image culture-image-hide-desktop" src="../assets/img/mate.png" alt="Mate">
       <img src="../assets/img/line-background2.svg" alt="" class="line-background-2">
     </div>
     <div class="line second-line"></div>
@@ -144,6 +145,10 @@ export default {
     z-index: 1;
   }
 
+  .culture-image-sm {
+    display: none;
+  }
+
   .line-background-1 {
     position: absolute;
     z-index: 0;
@@ -214,6 +219,153 @@ export default {
 
     .third-line {
       top: 2100px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .culture {
+      padding-top: 55px;
+    }
+
+    .title {
+      margin-bottom: 35px;
+      padding-left: 170px;
+      font-size: 36px;
+      line-height: 52px;
+    }
+
+    .title-underline {
+      top: 38px;
+      left: 190px;
+      height: 4px;
+      width: 100px;
+    }
+
+    .subtitle {
+      font-size: 26px;
+      line-height: 38px;
+    }
+
+    .culture-section {
+      margin-bottom: 95px;
+      overflow: hidden;
+      padding-top: 30px;
+    }
+
+    .description {
+      margin: 0 0 20px 0;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .culture-image {
+      width: 40%;
+    }
+
+    .line-background-1 {
+      top: -25px;
+      left: -160px;
+      width: 80%;
+    }
+
+    .line-background-2 {
+      top: 40px;
+      left: 350px;
+      width: 70%;
+    }
+
+    .line-background-3 {
+      top: 40px;
+      width: 80%;
+      left: -100px;
+    }
+
+    .line {
+      left: 21%;
+    }
+
+    .first-line {
+      top: 410px;
+      height: 110px;
+    }
+
+    .second-line {
+      top: 720px;
+      height: 100px;
+    }
+
+    .third-line {
+      top: 1180px;
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .line {
+      left: 10%;
+    }
+
+    .title {
+      padding-left: 40px;
+    }
+
+    .title-underline {
+      left: 60px;
+    }
+
+    .culture-section {
+      flex-direction: column;
+      overflow: hidden;
+      padding-top: 30px;
+      margin-bottom: 70px;
+    }
+
+    .culture-image {
+      padding-right: 30px;
+      width: auto;
+    }
+
+    .line-background-1,
+    .line-background-2,
+    .line-background-3 {
+      top: -25px;
+      left: 0;
+      width: auto;
+    }
+
+    .subtitle {
+      margin-top: 25px;
+    }
+
+    .culture-image-show-mobile {
+      display: initial;
+    }
+
+    .culture-image-hide-desktop {
+      display: none;
+    }
+
+    .first-line {
+      top: 840px;
+      height: 80px;
+    }
+
+    .second-line {
+      top: 1620px;
+      height: 80px;
+    }
+
+    .third-line {
+      top: 2500px;
+      height: 120px;
+    }
+
+    .culture-content-left {
+      padding-left: 45px;
+    }
+
+    .culture-content-right {
+      padding-right: 45px;
     }
   }
 </style>
