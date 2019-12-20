@@ -378,7 +378,7 @@ export default {
 
   @media (max-width: 576px) {
     .line {
-      left: 11.1%;
+      left: 13%;
     }
 
     .first-line,
@@ -396,7 +396,7 @@ export default {
 
     .third-line {
       height: 83px;
-      top: 2084px;
+      top: 2044px;
     }
 
     .title {

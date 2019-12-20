@@ -263,7 +263,7 @@ export default {
 
   @media (max-width: 576px) {
     .line {
-      left: 11.1%;
+      left: 13%;
     }
 
     .first-line {

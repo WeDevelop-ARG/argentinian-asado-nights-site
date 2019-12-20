@@ -210,11 +210,11 @@ export default {
 
   @media (max-width: 576px) {
     .line {
-      left: 11.1%;
+      left: 13%;
     }
 
     .events {
-      padding-left: 16px;
+      padding-left: 26px;
     }
 
     .upcoming-events {
