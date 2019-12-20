@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-form">
+  <div class="contact-form" id="join">
     <div class="title-section">
       <h3 class="title">Join the event</h3>
       <div class="title-underline"></div>

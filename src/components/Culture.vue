@@ -1,5 +1,5 @@
 <template>
-  <div class="culture">
+  <div class="culture" id="culture">
     <div class="title-section">
       <h3 class="title">Culture</h3>
       <div class="title-underline"></div>
