@@ -96,5 +96,9 @@ export default {
     .footer-text {
       margin-bottom: 20px;
     }
+
+    .logo {
+      margin-left: 0;
+    }
   }
 </style>

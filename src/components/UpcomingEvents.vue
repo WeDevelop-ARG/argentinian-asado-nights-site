@@ -240,4 +240,14 @@ export default {
       height: 400px;
     }
   }
+
+  @media (max-width: 360px) {
+    .line {
+      left: 9.6%;
+    }
+
+    .events {
+      padding-left: 10px;
+    }
+  }
 </style>

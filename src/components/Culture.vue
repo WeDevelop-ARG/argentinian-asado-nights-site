@@ -450,4 +450,14 @@ export default {
       margin-bottom: 0;
     }
   }
+
+  @media (max-width: 360px) {
+    .line {
+      left: 9.6%;
+    }
+
+    .third-line {
+      top: 2080px;
+    }
+  }
 </style>

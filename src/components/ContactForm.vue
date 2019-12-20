@@ -293,4 +293,10 @@ export default {
       padding-right: 12px;
     }
   }
+
+  @media (max-width: 360px) {
+    .line {
+      left: 9.6%;
+    }
+  }
 </style>
