@@ -135,7 +135,7 @@ export default {
       left: 0;
       width: 100%;
       height: 100vh;
-      background: url('../assets/img/header-mobile-background.png') no-repeat center center;
+      background: url('../assets/img/menu-mobile-background.png') no-repeat center center;
       background-size: cover;
     }
 

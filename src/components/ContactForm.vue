@@ -65,8 +65,8 @@ export default {
 
   .line {
     position: absolute;
-    left: 25.68%;
-    border: 1px solid rgba(211, 213, 216, 0.24);
+    left: 25.7%;
+    border: 0.5px solid rgba(211, 213, 216, 0.24);
   }
 
   .first-line {
@@ -221,7 +221,7 @@ export default {
     }
 
     .line {
-      left: 21%;
+      left: 21.1%;
     }
 
     .first-line {
@@ -249,7 +249,7 @@ export default {
 
   @media (max-width: 768px) {
     .line {
-      left: 10%;
+      left: 10.1%;
     }
 
     .contact-form {
@@ -263,11 +263,12 @@ export default {
 
   @media (max-width: 576px) {
     .line {
-      left: 11%;
+      left: 11.1%;
     }
 
     .first-line {
       height: 68px;
+      top: 718px;
     }
 
     .contact-form {

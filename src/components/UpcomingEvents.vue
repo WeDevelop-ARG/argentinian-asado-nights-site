@@ -57,8 +57,8 @@ export default {
 
   .line {
     position: absolute;
-    left: 25.68%;
-    border: 1px solid rgba(211, 213, 216, 0.24);
+    left: 25.7%;
+    border: 0.5px solid rgba(211, 213, 216, 0.24);
     z-index: 2;
   }
 
@@ -150,7 +150,7 @@ export default {
     }
 
     .line {
-      left: 21%;
+      left: 21.1%;
     }
 
     .first-line {
@@ -186,7 +186,7 @@ export default {
 
   @media (max-width: 768px) {
     .line {
-      left: 10%;
+      left: 10.1%;
     }
 
     .title {
@@ -210,7 +210,7 @@ export default {
 
   @media (max-width: 576px) {
     .line {
-      left: 11%;
+      left: 11.1%;
     }
 
     .events {

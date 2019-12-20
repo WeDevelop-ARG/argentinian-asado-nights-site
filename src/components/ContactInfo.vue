@@ -114,4 +114,15 @@ export default {
       padding-bottom: 173px;
     }
   }
+
+  @media(max-width: 576px) {
+    .contact-info-section {
+      background: url(../assets/img/contact-mobile-background.png) no-repeat center center;
+      padding-bottom: 0;
+    }
+
+    .contact-info:last-child {
+      margin-bottom: 126px;
+    }
+  }
 </style>
