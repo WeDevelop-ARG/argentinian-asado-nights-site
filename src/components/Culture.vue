@@ -5,6 +5,7 @@
       <div class="title-underline"></div>
     </div>
     <div class="culture-section">
+      <img src="../assets/img/line-background-mobile.svg" alt="" class="line-background-mobile">
       <img class="culture-image" src="../assets/img/gauchos.png" alt="Gauchos">
       <img src="../assets/img/line-background1.svg" alt="" class="line-background-1">
       <div class="culture-content culture-content-right">
@@ -15,6 +16,7 @@
     </div>
     <div class="line first-line"></div>
     <div class="culture-section">
+      <img src="../assets/img/line-background-mobile.svg" alt="" class="line-background-mobile">
       <img class="culture-image culture-image-show-mobile" src="../assets/img/mate.png" alt="Mate">
       <div class="culture-content culture-content-left">
         <h4 class="subtitle">Mate</h4>
@@ -26,6 +28,7 @@
     </div>
     <div class="line second-line"></div>
     <div class="culture-section">
+      <img src="../assets/img/line-background-mobile.svg" alt="" class="line-background-mobile">
       <img class="culture-image" src="../assets/img/asado.png" alt="Asado">
       <img src="../assets/img/line-background3.svg" alt="" class="line-background-3">
       <div class="culture-content culture-content-right">
@@ -146,6 +149,10 @@ export default {
   }
 
   .culture-image-sm {
+    display: none;
+  }
+
+  .line-background-mobile {
     display: none;
   }
 
@@ -366,6 +373,67 @@ export default {
 
     .culture-content-right {
       padding-right: 45px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .line {
+      left: 11%;
+    }
+
+    .first-line,
+    .second-line {
+      height: 45px;
+    }
+
+    .first-line {
+      top: 682px;
+    }
+
+    .second-line {
+      top: 1310px;
+    }
+
+    .third-line {
+      height: 83px;
+      top: 2084px;
+    }
+
+    .title {
+      padding-left: 15px;
+      margin-bottom: 14px;
+    }
+
+    .title-underline {
+      left: 35px;
+    }
+
+    .culture-image {
+      width: 346px;
+    }
+
+    .line-background-1,
+    .line-background-2,
+    .line-background-3 {
+      display: none;
+    }
+
+    .line-background-mobile {
+      display: initial;
+      position: absolute;
+      z-index: 0;
+      top: 10px;
+      left: -105px;
+      width: 563px;
+      height: 184px;
+    }
+
+    .culture-content {
+      padding: 0 12px;
+    }
+
+    .description:last-child {
+      margin-bottom: 0;
     }
   }
 </style>

@@ -81,4 +81,19 @@ export default {
       left: 10%;
     }
   }
+
+  @media (max-width: 576px) {
+    .line {
+      display: none;
+    }
+
+    .footer {
+      padding-top: 40px;
+      flex-direction: column;
+    }
+
+    .footer-text {
+      margin-bottom: 20px;
+    }
+  }
 </style>

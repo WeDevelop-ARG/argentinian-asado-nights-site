@@ -207,4 +207,31 @@ export default {
       top: 140px;
     }
   }
+
+  @media (max-width: 576px) {
+    .line {
+      left: 11%;
+    }
+
+    .events {
+      padding-left: 16px;
+    }
+
+    .upcoming-events {
+      padding-bottom: 10px;
+    }
+
+    .content {
+      padding-left: 16px;
+      width: 100%;
+    }
+
+    .image {
+      display: none;
+    }
+
+    .second-line {
+      height: 400px;
+    }
+  }
 </style>

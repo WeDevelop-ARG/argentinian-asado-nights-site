@@ -118,6 +118,7 @@ export default {
     outline: none;
     cursor: pointer;
     align-self: flex-end;
+    text-transform: uppercase;
   }
 
   @media (max-width: 1024px) {
@@ -178,6 +179,16 @@ export default {
       padding: 20px 30px;
       font-size: 12px;
       line-height: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .header {
+      background: url(../assets/img/header-mobile-background.png) no-repeat center center;
+    }
+
+    .description {
+      padding: 20px 14px 0 14px;
     }
   }
 </style>

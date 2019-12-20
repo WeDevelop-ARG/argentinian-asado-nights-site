@@ -260,4 +260,30 @@ export default {
       padding-right: 150px;
     }
   }
+
+  @media (max-width: 576px) {
+    .line {
+      left: 11%;
+    }
+
+    .first-line {
+      height: 68px;
+    }
+
+    .contact-form {
+      padding: 54px 16px 110px 16px;
+    }
+
+    .image {
+      display: none;
+    }
+
+    .input {
+      width: 100%;
+    }
+
+    .form {
+      padding-right: 12px;
+    }
+  }
 </style>

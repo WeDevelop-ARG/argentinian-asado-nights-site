@@ -2,7 +2,7 @@
   <li class="event">
     <h4 class="event-date">{{ event.date }}</h4>
     <span class="circle"></span>
-    <div>
+    <div class="event-right-content">
       <p class="event-date event-date-sm">{{ event.date }}</p>
       <h5 class="event-address">{{ event.address }}</h5>
       <p class="event-address-2">{{ event.address2 }}</p>
@@ -92,6 +92,7 @@ export default {
 
     .event-date-sm {
       display: initial;
+      text-align: left;
     }
 
     .events {
@@ -104,6 +105,19 @@ export default {
 
     .event-address-2 {
       margin: 5px 0 0 0;
+    }
+
+    .event-right-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .event {
+      margin-bottom: 65px;
     }
   }
 </style>
