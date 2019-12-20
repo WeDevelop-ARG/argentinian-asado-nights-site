@@ -1,5 +1,5 @@
 <template>
-  <div class="upcoming-events">
+  <div class="upcoming-events" id="upcomingEvents">
     <div class="line first-line"></div>
     <div class="content">
       <div class="title-section">
