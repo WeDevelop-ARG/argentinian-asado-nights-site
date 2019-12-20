@@ -118,5 +118,77 @@ export default {
     outline: none;
     cursor: pointer;
     align-self: flex-end;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 33px;
+      line-height: 48px;
+    }
+
+    .subtitle {
+      font-size: 27px;
+      line-height: 39px;
+    }
+
+    .content {
+      flex-direction: column;
+      margin: 50px 0;
+    }
+
+    .details {
+      width: 100%;
+      text-align: center;
+      padding-right: 0;
+      padding-bottom: 30px;
+    }
+
+    .event-date {
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .event-address {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .event-address-2 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .separator {
+      width: 84px;
+      height: 2px;
+    }
+
+    .description {
+      width: 100%;
+      padding: 0 33%;
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+    }
+
+    .action-button {
+      align-self: center;
+      margin-bottom: 76px;
+      padding: 20px 30px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .header {
+      background: url(../assets/img/header-mobile-background.png) no-repeat center center;
+    }
+
+    .description {
+      padding: 20px 14px 0 14px;
+    }
   }
 </style>
