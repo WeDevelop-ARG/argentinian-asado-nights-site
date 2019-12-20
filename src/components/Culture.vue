@@ -62,7 +62,8 @@ export default {
   .line {
     position: absolute;
     left: 25.7%;
-    border: 0.5px solid rgba(211, 213, 216, 0.24);
+    width: 1px;
+    background-color: rgba(211, 213, 216, 0.24);
   }
 
   .first-line {
@@ -130,17 +131,18 @@ export default {
   }
 
   .culture-content-right {
-    padding-right: 70px;
+    padding-right: 90px;
   }
 
   .culture-content-left {
-    padding-left: 90px;
+    padding-left: 110px;
   }
 
   .description {
     margin: 0 0 30px 0;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 300;
   }
 
   .culture-image {
@@ -405,12 +407,12 @@ export default {
     }
 
     .second-line {
-      top: 1310px;
+      top: 1270px;
     }
 
     .third-line {
       height: 83px;
-      top: 2044px;
+      top: 2000px;
     }
 
     .title {

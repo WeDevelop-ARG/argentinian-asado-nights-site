@@ -36,7 +36,7 @@ export default {
     flex-direction: column;
     align-items: center;
     background: url(../assets/img/header-background.png) no-repeat center center;
-    background-size: cover;
+    background-size: 100% 100%;
     color: #F0E6DF;
   }
 
@@ -82,33 +82,37 @@ export default {
     margin: 0;
     font-size: 30px;
     line-height: 41px;
+    font-weight: 600;
   }
 
   .event-address {
     margin: 5px 0;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 600;
   }
 
   .event-address-2 {
     margin: 0;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 300;
   }
 
   .description {
     margin: 0;
     padding-left: 30px;
-    padding-right: 260px;
+    padding-right: 270px;
     width: 50%;
     font-size: 17px;
     line-height: 23px;
+    font-weight: 300;
   }
 
   .action-button {
     margin-bottom: 67px;
     padding: 26px 57px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.08em;
@@ -121,7 +125,17 @@ export default {
     text-transform: uppercase;
   }
 
+  @media(min-width: 1920px) {
+    .header {
+      background-size: cover;
+    }
+  }
+
   @media (max-width: 1024px) {
+    .header {
+      background-size: cover;
+    }
+
     .title {
       font-size: 33px;
       line-height: 48px;

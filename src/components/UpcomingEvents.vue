@@ -58,7 +58,8 @@ export default {
   .line {
     position: absolute;
     left: 25.7%;
-    border: 0.5px solid rgba(211, 213, 216, 0.24);
+    width: 1px;
+    background-color: rgba(211, 213, 216, 0.24);
     z-index: 2;
   }
 
@@ -110,7 +111,7 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 163px;
+    padding-left: 11.48%;
   }
 
   .events {
@@ -121,27 +122,19 @@ export default {
 
   @media(min-width: 1920px) {
     .content {
-      padding-left: 286px;
+      padding-left: 15.1%;
     }
   }
 
   @media (max-width: 1366px) {
-    .line {
-      left: 24.9%;
-    }
-
     .content {
-      padding-left: 134px;
+      padding-left: 10.7%;
     }
   }
 
   @media (max-width: 1280px) {
-    .line {
-      left: 23.2%;
-    }
-
     .content {
-      padding-left: 91px;
+      padding-left: 9.7%;
     }
   }
 
@@ -205,7 +198,7 @@ export default {
 
     .events {
       margin-top: 100px;
-      padding-left: 26px;
+      padding-left: 18px;
     }
 
     .second-line {

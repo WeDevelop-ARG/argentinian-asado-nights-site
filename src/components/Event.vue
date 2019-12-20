@@ -30,7 +30,7 @@ export default {
     margin: 0;
     text-align: right;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
   }
@@ -51,7 +51,7 @@ export default {
 
   .event-address {
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
   }
@@ -59,6 +59,7 @@ export default {
   .event-address-2 {
     margin: 12px 0 0 0;
     font-weight: 300;
+    opacity: 0.6;
     font-size: 18px;
     line-height: 18px;
   }

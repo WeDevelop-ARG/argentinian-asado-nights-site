@@ -47,6 +47,10 @@ export default {
     box-sizing: border-box;
   }
 
+  html {
+        overflow-y: scroll;
+  }
+
   body {
     font-family: 'Open Sans', sans-serif;
     background-color: #393939;
