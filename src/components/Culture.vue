@@ -288,7 +288,7 @@ export default {
     }
 
     .line {
-      left: 21.1%;
+      left: 21.5%;
     }
 
     .first-line {
@@ -309,7 +309,7 @@ export default {
 
   @media (max-width: 768px) {
     .line {
-      left: 10.1%;
+      left: 11%;
     }
 
     .title {

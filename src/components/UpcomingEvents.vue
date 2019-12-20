@@ -150,7 +150,7 @@ export default {
     }
 
     .line {
-      left: 21.1%;
+      left: 21.5%;
     }
 
     .first-line {
@@ -176,7 +176,7 @@ export default {
     }
 
     .content {
-      padding-left: 51px;
+      padding-left: 59px;
     }
 
     .events {
@@ -186,7 +186,7 @@ export default {
 
   @media (max-width: 768px) {
     .line {
-      left: 10.1%;
+      left: 11%;
     }
 
     .title {
@@ -199,7 +199,7 @@ export default {
 
     .events {
       margin-top: 100px;
-      padding-left: 17px;
+      padding-left: 26px;
     }
 
     .second-line {
