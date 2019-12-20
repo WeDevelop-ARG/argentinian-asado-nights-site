@@ -119,6 +119,12 @@ export default {
     margin-top: 143px;
   }
 
+  @media(min-width: 1920px) {
+    .content {
+      padding-left: 286px;
+    }
+  }
+
   @media (max-width: 1366px) {
     .line {
       left: 24.9%;
