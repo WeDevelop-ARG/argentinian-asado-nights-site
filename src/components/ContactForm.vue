@@ -174,6 +174,12 @@ export default {
     background-color: #78ACE6;
   }
 
+  @media(min-width: 1920px) {
+    .contact-form {
+      padding: 110px 0 200px 300px;
+    }
+  }
+
   @media (max-width: 1366px) {
     .line {
       left: 24.9%;
@@ -285,6 +291,12 @@ export default {
 
     .form {
       padding-right: 12px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .line {
+      left: 9.6%;
     }
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar">
-    <a href="#app" class="nav-brand" v-smooth-scroll="{ duration: scrollDuration }">
+  <nav class="navbar" id="navbar">
+    <a href="#navbar" class="nav-brand" v-smooth-scroll="{ duration: scrollDuration }">
       <img src="../assets/img/logo.svg" class="nav-logo" alt="Argentinian Asado Night logo">
     </a>
     <span

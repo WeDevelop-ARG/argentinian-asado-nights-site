@@ -177,6 +177,20 @@ export default {
     top: 50px;
   }
 
+  @media(min-width: 1920px) {
+    .title {
+      padding-left: 410px;
+    }
+
+    .title-underline {
+      left: 437px;
+    }
+
+    .line-background-2 {
+      left: 820px;
+    }
+  }
+
   @media (max-width: 1366px) {
     .line {
       left: 24.9%;
@@ -434,6 +448,16 @@ export default {
 
     .description:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .line {
+      left: 9.6%;
+    }
+
+    .third-line {
+      top: 2080px;
     }
   }
 </style>
