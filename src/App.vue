@@ -48,7 +48,7 @@ export default {
   }
 
   html {
-        overflow-y: scroll;
+    overflow-y: scroll;
   }
 
   body {
