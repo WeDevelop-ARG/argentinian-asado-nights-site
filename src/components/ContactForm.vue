@@ -112,6 +112,7 @@ export default {
     font-weight: 300;
     font-size: 18px;
     line-height: 18px;
+    opacity: 0.6;
   }
 
   .form-section {
@@ -152,6 +153,7 @@ export default {
 
   .input::placeholder {
     font-weight: 300;
+    opacity: 0.6;
     color: #F0E6DF;
   }
 
@@ -161,7 +163,7 @@ export default {
     border: none;
     background-color: rgba(240, 230, 223, 0.16);
     cursor: not-allowed;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.08em;

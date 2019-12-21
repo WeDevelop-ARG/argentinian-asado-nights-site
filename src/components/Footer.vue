@@ -33,6 +33,7 @@ export default {
   .footer-text {
     margin: 0;
     font-weight: 300;
+    opacity: 0.6;
     font-size: 16px;
     line-height: 22px;
   }

@@ -59,7 +59,7 @@ export default {
 
   .contact-info {
     margin: 0 0 36px 0;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 26px;
     line-height: 159.9%;
     color: #FFCA7F;
@@ -72,6 +72,7 @@ export default {
   .content-text {
     margin: 0 0 12px 0;
     font-weight: 300;
+    opacity: 0.6;
     font-size: 24px;
     line-height: 18px;
   }
