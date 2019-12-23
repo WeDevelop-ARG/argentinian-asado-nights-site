@@ -240,11 +240,11 @@ export default {
 
   @media (max-width: 360px) {
     .line {
-      left: 9.6%;
+      left: 11.5%;
     }
 
     .events {
-      padding-left: 10px;
+      padding-left: 18px;
     }
   }
 </style>
