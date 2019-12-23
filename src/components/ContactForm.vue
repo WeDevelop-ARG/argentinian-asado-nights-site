@@ -187,6 +187,7 @@ export default {
     font-size: 16px;
     line-height: 19px;
     outline: none;
+    appearance: none;
   }
 
   .full-width-input {
@@ -297,8 +298,11 @@ export default {
       padding-right: 30%;
     }
 
-    .input {
+    .input-group {
       margin-bottom: 35px;
+    }
+
+    .input {
       font-size: 14px;
       line-height: 16px;
     }
@@ -353,7 +357,7 @@ export default {
       padding: 54px 16px 110px 16px;
     }
 
-    .input {
+    .input-group {
       width: 100%;
     }
 
