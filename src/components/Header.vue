@@ -199,6 +199,7 @@ export default {
   @media (max-width: 576px) {
     .header {
       background: url(../assets/img/header-mobile-background.png) no-repeat center center;
+      background-size: cover;
     }
 
     .description {

@@ -1,5 +1,6 @@
 <template>
   <div class="contact-form" id="join">
+    <div class="line third-line"></div>
     <div class="title-section">
       <h3 class="title">Join the event</h3>
       <div class="title-underline"></div>
@@ -9,16 +10,33 @@
         <h5 class="subtitle">Do you want to be part of the next Asado Night experience?</h5>
         <p class="description">Join us by completing the form below. All fields are mandatory.</p>
         <form class="form">
-          <input class="input" name="name" type="text" v-model.trim="contact.name" placeholder="Name">
-          <input class="input" name="surname" type="text" v-model.trim="contact.surname" placeholder="Surname">
-          <input class="input" name="email" type="email" v-model.trim="contact.email" placeholder="Email">
-          <input class="input" name="phone" type="text" v-model.trim="contact.phone" placeholder="Phone number">
-          <input class="input full-width-input" name="company" type="text" v-model.trim="contact.company" placeholder="Company">
+          <div class="input-group">
+            <input class="input" name="name" type="text" v-model.trim="$v.name.$model" placeholder="Name">
+            <div class="error" v-if="$v.name.$dirty && !$v.name.required">Field is required</div>
+          </div>
+          <div class="input-group">
+            <input class="input" name="surname" type="text" v-model.trim="$v.surname.$model" placeholder="Surname">
+            <div class="error" v-if="$v.surname.$dirty && !$v.surname.required">Field is required</div>
+          </div>
+          <div class="input-group">
+            <input class="input" name="email" type="email" v-model.trim="$v.email.$model" placeholder="Email">
+            <div class="error" v-if="$v.email.$dirty && !$v.email.required">Field is required</div>
+            <div class="error" v-if="$v.email.$dirty && !$v.email.email">Invalid email</div>
+          </div>
+          <div class="input-group">
+            <input class="input" name="phone" type="text" v-model.trim="$v.phone.$model" placeholder="Phone number">
+            <div class="error" v-if="$v.phone.$dirty && !$v.phone.required">Field is required</div>
+            <div class="error" v-if="$v.phone.$dirty && !$v.phone.numeric">Invalid phone number</div>
+          </div>
+          <div class="input-group full-width-input">
+            <input class="input" name="company" type="text" v-model.trim="$v.company.$model" placeholder="Company">
+            <div class="error" v-if="$v.company.$dirty && !$v.company.required">Field is required</div>
+          </div>
           <button
             type="submit"
             class="submit-button"
-            :class="{'active-submit-button': !checkDisabled}"
-            :disabled="checkDisabled"
+            :class="{'active-submit-button': !$v.$invalid}"
+            :disabled="$v.$invalid"
           >
             Join the event
           </button>
@@ -31,24 +49,36 @@
 </template>
 
 <script>
+import { required, email, numeric } from 'vuelidate/lib/validators'
+
 export default {
   name: 'ContactForm',
   data () {
     return {
-      contact: {
-        name: '',
-        surname: '',
-        email: '',
-        phone: '',
-        company: ''
-      }
+      name: '',
+      surname: '',
+      email: '',
+      phone: '',
+      company: ''
     }
   },
-  computed: {
-    checkDisabled: function () {
-      const { email, name, surname, phone, company } = this.contact
-
-      return [name, surname, email, phone, company].includes('')
+  validations: {
+    name: {
+      required
+    },
+    surname: {
+      required
+    },
+    email: {
+      required,
+      email
+    },
+    phone: {
+      required,
+      numeric
+    },
+    company: {
+      required
     }
   }
 }
@@ -63,6 +93,19 @@ export default {
     position: relative;
   }
 
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 48.5%;
+  }
+
+  .error {
+    margin-top: 5px;
+    color: #CA3B3B;
+    font-size: 12px;
+    line-height: 18px;
+  }
   .line {
     position: absolute;
     left: 25.7%;
@@ -72,6 +115,11 @@ export default {
   .first-line {
     height: 168px;
     top: 750px;
+  }
+
+  .third-line {
+    height: 207px;
+    top: -120px;
   }
 
   .title-section {
@@ -129,7 +177,7 @@ export default {
   }
 
   .input {
-    margin-bottom: 40px;
+    width: 100%;
     padding-bottom: 8px;
     border: none;
     border-bottom: 1px solid #F0E6DF;
@@ -139,7 +187,6 @@ export default {
     font-size: 16px;
     line-height: 19px;
     outline: none;
-    width: 48.5%;
   }
 
   .full-width-input {
@@ -192,6 +239,10 @@ export default {
     .line {
       left: 23.2%;
     }
+
+    .third-line {
+      top: -130px;
+    }
   }
 
     @media (max-width: 1024px) {
@@ -213,7 +264,7 @@ export default {
     }
 
     .image {
-      width: 250px;
+      width: 27%;
     }
 
     .subtitle {
@@ -237,8 +288,13 @@ export default {
       height: 175px;
     }
 
+    .third-line {
+      top: 1270px;
+      height: -100px;
+    }
+
     .form {
-      padding-right: 200px;
+      padding-right: 30%;
     }
 
     .input {
@@ -267,6 +323,15 @@ export default {
     .form {
       padding-right: 150px;
     }
+
+    .third-line {
+      top: -60px;
+      height: 120px;
+    }
+
+    .image {
+      display: none;
+    }
   }
 
   @media (max-width: 576px) {
@@ -279,12 +344,13 @@ export default {
       top: 718px;
     }
 
-    .contact-form {
-      padding: 54px 16px 110px 16px;
+    .third-line {
+      height: 83px;
+      top: -40px;
     }
 
-    .image {
-      display: none;
+    .contact-form {
+      padding: 54px 16px 110px 16px;
     }
 
     .input {

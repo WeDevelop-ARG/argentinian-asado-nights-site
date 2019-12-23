@@ -205,6 +205,10 @@ export default {
       height: 490px;
       top: 140px;
     }
+
+    .image {
+      display: none;
+    }
   }
 
   @media (max-width: 576px) {
