@@ -143,4 +143,10 @@ export default {
       margin-bottom: 126px;
     }
   }
+
+  @media (max-width: 360px) {
+    .contact-info-section {
+      background-size: auto;
+    }
+  }
 </style>
