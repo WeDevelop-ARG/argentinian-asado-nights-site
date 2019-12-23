@@ -77,7 +77,23 @@ export default {
     line-height: 18px;
   }
 
+  @media (max-width: 1366px) {
+    .contact-info-section {
+      background-size: 103% 100%;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .contact-info-section {
+      background-size: 110.5% 100%;
+    }
+  }
+
   @media (max-width: 1024px) {
+    .contact-info-section {
+      background-size: cover;
+    }
+
     .title {
       margin-bottom: 70px;
       font-size: 36px;
@@ -119,6 +135,7 @@ export default {
   @media(max-width: 576px) {
     .contact-info-section {
       background: url(../assets/img/contact-mobile-background.png) no-repeat center center;
+      background-size: cover;
       padding-bottom: 0;
     }
 

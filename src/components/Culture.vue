@@ -38,7 +38,6 @@
         <p class="description">Cooking can be done ”al asador” or ”a la parrilla”. In the first case, a fire is made on the ground or in a fire pit and surrounded by metal crosses (asadores) that hold the entire carcass of an animal splayed open to receive the heat from the fire. In the second case, a fire is made and after the charcoal has formed, a grill with the meat is placed over it.</p>
       </div>
     </div>
-    <div class="line third-line"></div>
   </div>
 </template>
 
@@ -57,6 +56,7 @@ export default {
     color: #F0E6DF;
     padding-top: 60px;
     position: relative;
+    overflow: hidden;
   }
 
   .line {
@@ -74,11 +74,6 @@ export default {
   .second-line {
     height: 166px;
     top: 1238px;
-  }
-
-  .third-line {
-    height: 207px;
-    top: 1980px;
   }
 
   .title-section {
@@ -121,6 +116,7 @@ export default {
     display: flex;
     margin-bottom: 158px;
     position: relative;
+    align-items: flex-start;
   }
 
   .culture-content {
@@ -148,6 +144,7 @@ export default {
   .culture-image {
     position: relative;
     z-index: 1;
+    align-self: flex-start;
   }
 
   .culture-image-show-mobile {
@@ -240,8 +237,8 @@ export default {
       top: 1260px;
     }
 
-    .third-line {
-      top: 2100px;
+    .culture-image {
+      width: 60%;
     }
   }
 
@@ -282,7 +279,7 @@ export default {
     }
 
     .culture-image {
-      width: 40%;
+      width: 410px
     }
 
     .line-background-1 {
@@ -315,11 +312,6 @@ export default {
     .second-line {
       top: 800px;
       height: 100px;
-    }
-
-    .third-line {
-      top: 1270px;
-      height: 150px;
     }
   }
 
@@ -378,11 +370,6 @@ export default {
       height: 80px;
     }
 
-    .third-line {
-      top: 2500px;
-      height: 120px;
-    }
-
     .culture-content-left {
       padding-left: 45px;
     }
@@ -407,16 +394,11 @@ export default {
     }
 
     .second-line {
-      top: 1270px;
-    }
-
-    .third-line {
-      height: 83px;
-      top: 2000px;
+      top: 1300px;
     }
 
     .title {
-      padding-left: 15px;
+      padding-left: 16px;
       margin-bottom: 14px;
     }
 
@@ -445,7 +427,7 @@ export default {
     }
 
     .culture-content {
-      padding: 0 12px;
+      padding: 0 16px;
     }
 
     .description:last-child {
@@ -456,10 +438,6 @@ export default {
   @media (max-width: 360px) {
     .line {
       left: 9.6%;
-    }
-
-    .third-line {
-      top: 2080px;
     }
   }
 </style>

@@ -14,6 +14,7 @@
 <script>
 import Vue from 'vue'
 import vueSmoothScroll from 'vue-smooth-scroll'
+import Vuelidate from 'vuelidate'
 
 import Header from './components/Header'
 import UpcomingEvents from './components/UpcomingEvents'
@@ -23,6 +24,7 @@ import ContactInfo from './components/ContactInfo'
 import Footer from './components/Footer'
 
 Vue.use(vueSmoothScroll)
+Vue.use(Vuelidate)
 
 export default {
   name: 'app',

@@ -171,7 +171,7 @@ export default {
 
     .navbar {
       align-items: center;
-      padding: 20px 15px 0 15px;
+      padding: 20px 16px 0 15px;
       margin-bottom: 75px;
     }
 
