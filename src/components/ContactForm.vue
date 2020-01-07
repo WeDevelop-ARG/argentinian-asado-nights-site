@@ -88,7 +88,7 @@ export default {
       const { email, name, surname, phone, company } = this
 
       mailshake(process.env.VUE_APP_MAILSHAKE_API_KEY).recipients.add({
-        campaignID: proccess.env.VUE_APP_CAMPAIGN_ID,
+        campaignID: process.env.VUE_APP_CAMPAIGN_ID,
         addAsNewList: true,
         addresses: [
           {
