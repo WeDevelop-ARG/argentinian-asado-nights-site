@@ -60,9 +60,7 @@ export default {
       surname: '',
       email: '',
       phone: '',
-      company: '',
-      campaignId: 444529,
-      apiKey: '5debdc2c-e965-4d75-b0a3-c99fc460feba'
+      company: ''
     }
   },
   validations: {
@@ -87,10 +85,10 @@ export default {
   methods: {
     sendRecipient: function (e) {
       e.preventDefault()
-      const { email, name, surname, phone, company, campaignId, apiKey } = this
+      const { email, name, surname, phone, company } = this
 
-      mailshake(apiKey).recipients.add({
-        campaignID: campaignId,
+      mailshake(process.env.VUE_APP_MAILSHAKE_API_KEY).recipients.add({
+        campaignID: proccess.env.VUE_APP_CAMPAIGN_ID,
         addAsNewList: true,
         addresses: [
           {
@@ -104,7 +102,7 @@ export default {
         ]
       })
         .then(result => {
-          console.log(JSON.stringify(result, null, 2))
+          // TO DO: Redirect to Thank You page
         })
         .catch(err => {
           console.error(`${err.code}: ${err.message}`)
