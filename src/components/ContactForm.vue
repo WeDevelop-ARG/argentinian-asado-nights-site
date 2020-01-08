@@ -86,7 +86,7 @@ export default {
     sendRecipient: function (e) {
       e.preventDefault()
       const { email, name, surname, phone, company } = this
-      console.log(process.env)
+
       mailshake(process.env.VUE_APP_MAILSHAKE_API_KEY).recipients.add({
         campaignID: process.env.VUE_APP_CAMPAIGN_ID,
         addAsNewList: true,
