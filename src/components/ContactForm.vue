@@ -9,7 +9,7 @@
       <div class="content">
         <h5 class="subtitle">Do you want to be part of the next Asado Night experience?</h5>
         <p class="description">Join us by completing the form below. All fields are mandatory.</p>
-        <form class="form">
+        <form class="form" v-on:submit="sendRecipient">
           <div class="input-group">
             <input class="input" name="name" type="text" v-model.trim="$v.name.$model" placeholder="Name">
             <div class="error" v-if="$v.name.$dirty && !$v.name.required">Field is required</div>
@@ -50,6 +50,7 @@
 
 <script>
 import { required, email, numeric } from 'vuelidate/lib/validators'
+import mailshake from 'mailshake-node'
 
 export default {
   name: 'ContactForm',
@@ -79,6 +80,33 @@ export default {
     },
     company: {
       required
+    }
+  },
+  methods: {
+    sendRecipient: function (e) {
+      e.preventDefault()
+      const { email, name, surname, phone, company } = this
+
+      mailshake(process.env.VUE_APP_MAILSHAKE_API_KEY).recipients.add({
+        campaignID: process.env.VUE_APP_CAMPAIGN_ID,
+        addAsNewList: true,
+        addresses: [
+          {
+            emailAddress: email,
+            fullName: `${name} ${surname}`,
+            fields: {
+              phone,
+              company
+            }
+          }
+        ]
+      })
+        .then(result => {
+          // TO DO: Redirect to Thank You page
+        })
+        .catch(err => {
+          console.error(`${err.code}: ${err.message}`)
+        })
     }
   }
 }
