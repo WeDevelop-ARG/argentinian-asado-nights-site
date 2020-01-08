@@ -102,7 +102,7 @@ export default {
         ]
       })
         .then(result => {
-          // TO DO: Redirect to Thank You page
+          this.$router.push('thankyou')
         })
         .catch(err => {
           console.error(`${err.code}: ${err.message}`)
