@@ -12,7 +12,7 @@
       <div class="separator"></div>
       <p class="description">Discover our finest tranditional Argenitinian barbacue with an elegant selection of wines, meat, pork and chicken.</p>
     </div>
-    <a href="https://docs.google.com/forms/d/1ioTDfg7CRTW2eXD1fUvBmWLWeJ5ij-JEmigXWsfR8i4/viewform?ts=5e137b7d&edit_requested=true" class="action-button" target="_blank">Join the event</a>
+    <a href="https://docs.google.com/forms/d/1ddCVdhlY4uMtviZtpq9nzqUQF11X9Sh8CZTW_vF3eas/viewform?edit_requested=true" class="action-button" target="_blank">Join the event</a>
   </header>
 </template>
 
