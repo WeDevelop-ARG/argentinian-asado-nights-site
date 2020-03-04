@@ -28,15 +28,21 @@ export default {
       events: [
         {
           id: 1,
-          date: 'January 16 , 6pm',
+          date: 'April 9th 2020, 6.30pm',
           address: 'Corrientes 348 Argentinian Steakhouse',
-          address2: '1807 Ross Ave., Ste. 200 Dallas, TX 75201'
+          address2: '1807 Ross Ave., Dallas, TX 75201'
         },
         {
           id: 2,
-          date: 'January 23, 6.30pm',
+          date: 'April 16th 2020, 6.30pm',
           address: 'Buenos Aires Café',
           address2: '1201 E. 6th St., Austin, TX 78702'
+        },
+        {
+          id: 3,
+          date: 'April 23rd 2020,  6.30pm',
+          address: 'Lolinda Argentinian Restaurant',
+          address2: '2518 Mission St., San Francisco, CA 94110'
         }
       ]
     }
