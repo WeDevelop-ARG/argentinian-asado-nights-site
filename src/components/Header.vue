@@ -10,7 +10,7 @@
         <p class="event-address-2">1807 Ross Ave., Dallas, TX 75201</p>
       </div>
       <div class="separator"></div>
-      <p class="description">Discover our finest tranditional Argenitinian barbacue with an elegant selection of wines, meat, pork and chicken.</p>
+      <p class="description">Discover our finest tranditional Argentinian barbacue with an elegant selection of wines, meat, pork and chicken.</p>
     </div>
     <a href="https://docs.google.com/forms/d/1ddCVdhlY4uMtviZtpq9nzqUQF11X9Sh8CZTW_vF3eas/viewform?edit_requested=true" class="action-button" target="_blank">Join the event</a>
   </header>
