@@ -2,6 +2,7 @@
   <div>
     <Header :scrollDuration="this.scrollDuration" />
     <UpcomingEvents />
+    <PreviousEvents />
     <Culture />
     <ContactForm />
     <div class="darker-background">
@@ -14,6 +15,7 @@
 <script>
 import Header from '../../components/Header'
 import UpcomingEvents from '../../components/UpcomingEvents'
+import PreviousEvents from '../../components/PreviousEvents'
 import Culture from '../../components/Culture'
 import ContactForm from '../../components/ContactForm'
 import ContactInfo from '../../components/ContactInfo'
@@ -24,6 +26,7 @@ export default {
   components: {
     Header,
     UpcomingEvents,
+    PreviousEvents,
     Culture,
     ContactForm,
     ContactInfo,
