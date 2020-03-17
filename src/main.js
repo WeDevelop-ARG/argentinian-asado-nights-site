@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+import './initialization/createCustomFilters'
 import router from './router'
 import App from './App.vue'
 

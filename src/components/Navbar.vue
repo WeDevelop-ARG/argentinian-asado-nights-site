@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar" id="navbar">
-    <a href="#navbar" class="nav-brand" v-smooth-scroll="{ duration: scrollDuration }">
+    <router-link  :to="{path: '/#navbar'}" class="nav-brand" v-smooth-scroll="{ duration: scrollDuration }">
       <img src="../assets/img/logo.svg" class="nav-logo" alt="Argentinian Asado Night logo">
-    </a>
+    </router-link >
     <span
       class="mobile-toggle"
       :class="{ 'active-toggle': toggleMenu }"
@@ -19,16 +19,19 @@
     <ul class="nav-link-list" :class="{'active-menu': toggleMenu}" >
       <span class="separator upper-separator"></span>
       <li v-on:click="onToggle" class="nav-item first-nav-item">
-        <a href="#upcomingEvents" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Upcoming events</a>
+        <router-link :to="{path: '/#upcomingEvents'}" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Upcoming events</router-link>
+      </li>
+       <li v-on:click="onToggle" class="nav-item">
+        <router-link :to="{path: '/#previousEvents'}" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Previous Events</router-link>
       </li>
       <li v-on:click="onToggle" class="nav-item">
-        <a href="#culture" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Culture</a>
+        <router-link :to="{path: '/#culture'}" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Culture</router-link>
       </li>
       <li v-on:click="onToggle" class="nav-item">
-        <a href="#join" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Join</a>
+        <router-link  :to="{path: '/#join'}" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -100 }">Join</router-link >
       </li>
       <li v-on:click="onToggle" class="nav-item">
-        <a href="#contact" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -50 }">Contact</a>
+        <router-link :to="{path: '/#contact'}" class="nav-link" v-smooth-scroll="{ duration: scrollDuration, offset: -50 }">Contact</router-link >
       </li>
       <span class="separator bottom-separator"></span>
     </ul>
