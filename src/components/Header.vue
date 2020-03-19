@@ -5,7 +5,7 @@
     <h2 class="subtitle">Roadshow 2020</h2>
     <div class="content">
       <div class="details">
-        <h4 class="event-date">April 9 2020, 6:30pm-9:30pm</h4>
+        <h4 class="event-date">May 21 2020, 6:30pm-9:30pm</h4>
         <h5 class="event-address">Corrientes 348 Argentinian Steakhouse</h5>
         <p class="event-address-2">1807 Ross Ave., Dallas, TX 75201</p>
       </div>
