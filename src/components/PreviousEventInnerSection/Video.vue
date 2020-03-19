@@ -105,11 +105,13 @@ export default {
   .video{
     width: 480px;
     height: 848px;
+    cursor: pointer;
   }
 
 .video-horizontal{
     width: 508px;
     height: 285.75px;
+    cursor: pointer;
   }
 
   .video-metadata {
@@ -141,6 +143,7 @@ export default {
 
   .play-button {
     position: absolute;
+    cursor: pointer;
     top: 40%;
     left: 40%;
     opacity: 1;

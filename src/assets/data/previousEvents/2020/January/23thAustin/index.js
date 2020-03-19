@@ -13,6 +13,7 @@ export default {
   address: 'Buenos Aires Café',
   address2: '1201 E. 6th St., Austin, TX 78702',
   state: 'Texas',
+  city: 'Austin',
   stateID: 'TX',
   photoSectionDescription: '',
   photos: [

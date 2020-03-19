@@ -36,6 +36,7 @@ export default {
     padding-bottom: 89px;
     width: 570px;
     margin: 0px 12px 0px 12px;
+    cursor: pointer;
   }
 
   .thumbnail-button-container {
