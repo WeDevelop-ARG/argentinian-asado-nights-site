@@ -12,6 +12,7 @@ export default {
   address: 'Corrientes 348 Argentinian Steakhouse',
   address2: '1807 Ross Ave., Ste. 200 Dallas, TX 75201',
   state: 'Texas',
+  city: 'Dallas',
   stateID: 'TX',
   photoSectionDescription: '',
   photos: [

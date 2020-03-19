@@ -4,7 +4,7 @@
     <div class='inner-section-content'>
         <div class="section sectionPadding">
           <div class="title-section">
-            <h3 class="title">{{event.date | formatFullMonthDay}}, {{event.state}}</h3>
+            <h3 class="title">{{event.date | formatFullMonthDay}}, {{event.city}}</h3>
             <div class="title-underline" />
           </div>
           <div class='description'>

@@ -1,6 +1,6 @@
 <template>
-   <div class="event" @click="navigateToInnerSection()">
-    <div class="thumbnail-button-container">
+   <div class="event">
+    <div class="thumbnail-button-container" @click="navigateToInnerSection()">
       <img class="thumbnail" v-bind:src="event.thumbnail" alt="event-thumbnail">
       <img class='button' src="../assets/img/arrow-button.svg" alt="previous event details" />
     </div>
@@ -40,6 +40,7 @@ export default {
 
   .thumbnail-button-container {
     position: relative;
+    cursor: pointer;
   }
 
   .thumbnail {
